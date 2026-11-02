@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Кофе Греет — уютная кофейня</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+
+<!-- Preloader -->
+<div class="preloader" id="preloader">
+    <div class="preloader-content">
+        <div class="coffee-cup">
+            <div class="steam">
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="cup-body">
+                <div class="coffee-fill"></div>
+            </div>
+            <div class="cup-handle"></div>
+            <div class="coffee-beans">
+                <div class="bean"></div>
+                <div class="bean"></div>
+                <div class="bean"></div>
+                <div class="bean"></div>
+            </div>
+        </div>
+        <div class="preloader-title">Кофе Греет</div>
+        <div class="preloader-spinner"></div>
+        <div class="progress-bar">
+            <div class="progress-bar-fill"></div>
+        </div>
+        <div class="loading-text">
+            Загрузка<span>.</span><span>.</span><span>.</span>
+        </div>
+    </div>
+</div>
+
+<header>
+    <div class="container header-container">
+        <div class="logo">
+            <img src="imgs/logo.png" alt="Кофе Греет" />
+            <span>Кофе Греет</span>
+        </div>
+
+        <button class="burger-btn" id="burgerBtn" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav-wrapper" id="navWrapper">
+            <ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="meny.html">Меню</a></li>
+                <li><a href="about.html">Отзывы</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <div class="work-time">
+            <i class="far fa-clock"></i> 08:00 – 22:00
+        </div>
+    </div>
+</header>
+
+<div class="menu-overlay" id="menuOverlay"></div>
+
+<main>
+    <!-- Преимущества -->
+    <section class="section advantages">
+        <div class="container">
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <i class="fas fa-smile"></i>
+                    <h3>Гостеприимный бариста</h3>
+                    <p>Подберёт напиток под ваше настроение</p>
+                </div>
+                <div class="advantage-card">
+                    <i class="fas fa-mug-hot"></i>
+                    <h3>Кофе с собой</h3>
+                    <p>Любимый кофе всегда с вами</p>
+                </div>
+                <div class="advantage-card">
+                    <i class="fas fa-seedling"></i>
+                    <h3>100% Арабика</h3>
+                    <p>Свежая обжарка и проф. оборудование</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Меню (часть) -->
+    <section id="menu" class="section">
+        <div class="container">
+            <h2 class="section-title">Наше меню</h2>
+
+            <!-- ЗАВТРАКИ (БЕЗ КАРТИНОК) -->
+            <div class="menu-category">
+                <h3 class="category-title"><i class="fas fa-utensils"></i> Завтраки</h3>
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <h3>Сырники</h3>
+                        <p>Творожные оладьи со сметаной</p>
+                        <span class="price">350 ₽</span>
+                    </div>
+                    <div class="menu-card">
+                        <h3>Английский завтрак</h3>
+                        <p>Яйца, бекон, сосиски, тосты</p>
+                        <span class="price">400 ₽</span>
+                    </div>
+                    <div class="menu-card">
+                        <h3>Овсяная каша</h3>
+                        <p>С фруктами на молоке</p>
+                        <span class="price">300 ₽</span>
+                    </div>
+                    <div class="menu-card">
+                        <h3>Пышка со скремблом</h3>
+                        <p>Булочка с яичницей и зеленью</p>
+                        <span class="price">350 ₽</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- КОФЕ (С КАРТИНКАМИ) -->
+            <div class="menu-category">
+                <h3 class="category-title"><i class="fas fa-coffee"></i> Кофе</h3>
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <img src="imgs/экспрессо.png" alt="Эспрессо" class="menu-img" />
+                        <h3>Эспрессо</h3><p>30 мл</p>
+                        <span class="price">220 ₽</span>
+                    </div>
+                    <div class="menu-card">
+                        <img src="imgs/американо.png" alt="Американо" class="menu-img" />
+                        <h3>Американо</h3><p>250 мл</p>
+                        <span class="price">220 ₽</span>
+                    </div>
+                    <div class="menu-card">
+                        <img src="imgs/капучино.png" alt="Капучино" class="menu-img" />
+                        <h3>Капучино</h3><p>250/450 мл</p>
+                        <span class="price">260/300 ₽</span>
+                    </div>
+                    <div class="menu-card">
+                        <img src="imgs/латте.png" alt="Латте" class="menu-img" />
+                        <h3>Латте</h3><p>250/450 мл</p>
+                        <span class="price">260/300 ₽</span>
+                    </div>
+                </div>
+                <div class="btn-more-wrapper">
+                    <a href="meny.html" class="btn-show-more">Показать всё меню</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма обратной связи -->
+    <section id="contacts-form" class="section">
+        <div class="container">
+            <h2 class="section-title">Напишите нам</h2>
+            <div class="feedback-form-wrapper">
+                <form class="feedback-form" id="feedbackForm" action="https://formspree.io/f/mnjegejd" method="POST">
+                    <input type="text" name="name" placeholder="Ваше имя" required />
+                    <input type="tel" name="phone" placeholder="Номер телефона" required />
+                    <textarea name="message" rows="3" placeholder="Ваш вопрос или пожелание" required></textarea>
+                    <button type="submit">Отправить</button>
+                </form>
+                <p style="text-align: center; margin-top: 16px; color: #777;">
+                    <i class="fas fa-comment"></i> Хотите оставить развёрнутый отзыв? 
+                    <a href="about.html" style="color: var(--coffee); font-weight: 600;">Перейти на страницу отзывов</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Карта + контакты -->
+    <section id="map-contacts" class="section map-contacts-section">
+        <div class="container">
+            <div class="map-contacts-wrapper">
+                <div class="map-small">
+                    <h2 class="section-title" style="border-left: none; padding-left: 0;">Мы на карте</h2>
+                    <div class="map-wrapper-small">
+                        <iframe src="https://yandex.ru/map-widget/v1/?ll=63.332390%2C61.313814&z=17&pt=63.333053%2C61.313608&what=this&mode=search&text=Югорск%20ул.%20Механизаторов%205%2F1" allowfullscreen loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="contacts-side" id="contacts">
+                    <h2 class="section-title" style="border-left: none; padding-left: 0;">Контакты</h2>
+                    <div class="contacts-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Югорск, ул. Механизаторов 5/1</p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:+79224306510">+7 (922) 430-65-10</a></p>
+                        <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com" target="_blank">Instagram</a></p>
+                        <p><i class="fab fa-vk"></i> <a href="https://vk.com/coffeegreyet" target="_blank">ВКонтакте</a></p>
+                        <p><i class="fas fa-star" style="color: #f5b342;"></i> <a href="about.html">Читать отзывы</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2025 Кофе Греет. С любовью к вашему кофе.</p>
+    </div>
+</footer>
+
+<script>
+    // Preloader
+    window.addEventListener('load', function() {
+        const preloader = document.getElementById('preloader');
+        setTimeout(function() {
+            preloader.classList.add('hidden');
+        }, 1200);
+    });
+
+    // Бургер-меню
+    const burgerBtn = document.getElementById('burgerBtn');
+    const navWrapper = document.getElementById('navWrapper');
+    const menuOverlay = document.getElementById('menuOverlay');
+
+    function openMenu() {
+        burgerBtn.classList.add('active');
+        navWrapper.classList.add('active');
+        menuOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+        burgerBtn.classList.remove('active');
+        navWrapper.classList.remove('active');
+        menuOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    burgerBtn.addEventListener('click', function() {
+        if (navWrapper.classList.contains('active')) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
+    });
+
+    menuOverlay.addEventListener('click', closeMenu);
+
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+        link.addEventListener('click', closeMenu);
+    });
+
+    // Форма обратной связи
+    document.getElementById('feedbackForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const form = this;
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalText = submitBtn.textContent;
+        
+        submitBtn.textContent = '⏳ Отправка...';
+        submitBtn.disabled = true;
+        submitBtn.style.opacity = '0.7';
+        
+        const formData = new FormData(form);
+        
+        fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => {
+            if (response.ok) {
+                alert('✅ Спасибо! Ваше сообщение отправлено. Мы свяжемся с вами в ближайшее время.');
+                form.reset();
+            } else {
+                alert('❌ Произошла ошибка. Попробуйте позже.');
+            }
+        })
+        .catch(error => {
+            alert('❌ Произошла ошибка. Попробуйте позже.');
+        })
+        .finally(() => {
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
+            submitBtn.style.opacity = '1';
+        });
+    });
+</script>
+</body>
+</html>

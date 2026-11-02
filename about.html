@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Отзывы и обратная связь — Кофе Греет</title>
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+
+<!-- Preloader -->
+<div class="preloader" id="preloader">
+    <div class="preloader-content">
+        <div class="coffee-cup">
+            <div class="steam">
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="cup-body">
+                <div class="coffee-fill"></div>
+            </div>
+            <div class="cup-handle"></div>
+            <div class="coffee-beans">
+                <div class="bean"></div>
+                <div class="bean"></div>
+                <div class="bean"></div>
+                <div class="bean"></div>
+            </div>
+        </div>
+        <div class="preloader-title">Кофе Греет</div>
+        <div class="preloader-spinner"></div>
+        <div class="progress-bar">
+            <div class="progress-bar-fill"></div>
+        </div>
+        <div class="loading-text">
+            Загрузка<span>.</span><span>.</span><span>.</span>
+        </div>
+    </div>
+</div>
+
+<header>
+    <div class="container header-container">
+        <div class="logo">
+            <img src="imgs/logo.png" alt="Кофе Греет" />
+            <span>Кофе Греет</span>
+        </div>
+
+        <button class="burger-btn" id="burgerBtn" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav-wrapper" id="navWrapper">
+            <ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="meny.html">Меню</a></li>
+                <li><a href="about.html">Отзывы</a></li>
+                <li><a href="index.html#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <div class="work-time">
+            <i class="far fa-clock"></i> 08:00 – 22:00
+        </div>
+    </div>
+</header>
+
+<div class="menu-overlay" id="menuOverlay"></div>
+
+<main>
+    <div class="container">
+        <!-- Отзывы -->
+        <section class="feedback-section reviews-section">
+            <div class="feedback-header">
+                <h1><i class="fas fa-star" style="color: #f5b342;"></i> Отзывы наших гостей</h1>
+                <p>Реальные отзывы о нашей кофейне</p>
+            </div>
+
+            <div class="reviews-wrapper">
+                <!-- Отзыв 1: molka2557 - 5 звезд -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="review-name">molka2557</span>
+                        <span class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                    </div>
+                    <p>«всё понравилось, кофе шикарный, впервые попробовала такой вкусный, брала капучино. Также ели вафли, которые были очень вкусными! Приходили в будний день, народу не было. Те кто жалуются на долгую отдачу в выходные-вы не одни!!»</p>
+                    <span class="review-date">7 мая</span>
+                </div>
+
+                <!-- Отзыв 2: Ammm - 4 звезды -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="review-name">Ammm</span>
+                        <span class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </span>
+                    </div>
+                    <p>«Десерты и кофе вкусные! Но вот летние напитки ужасны 🤯 Попробовали все, те что с кофе очень горькие, один эспрессо, только с киви нормальный коктейль, за такую цену ожидали лучшего.. Просьба, вкусы что в составе делать более насыщенные, а то один лед и вода.. Спасибо.»</p>
+                    <span class="review-date">9 июля</span>
+                </div>
+
+                <!-- Отзыв 3: Andrey Prusakov - 5 звезд -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="review-name">Andrey Prusakov</span>
+                        <span class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                    </div>
+                    <p>«Кофе вкусный, место приятное, завтраки аппетитные и сытные...»</p>
+                    <span class="review-date">17 ноября</span>
+                </div>
+
+                <!-- Отзыв 4: Инна - 5 звезд -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="review-name">Инна</span>
+                        <span class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                    </div>
+                    <p>«Часто бываю на завтраке. Больше всего нравится боул, он такой изобильный. Я бы из него убрала оливки, хороших оливок сейчас не найдёшь за дешево, а эти делают вкус дешевым. Хотя все остальные компоненты очень достойные. Листья салата хотелось бы рваные, а не резаные. Также ни раз ела вафли с лососем, всё прекрасно. Классика жанра. Кофе всегда великолепный. Десерты тоже. Благодарю»</p>
+                    <span class="review-date">16 декабря</span>
+                </div>
+
+                <!-- Отзыв 5: Снежана Юрьевна - 5 звезд -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="review-name">Снежана Юрьевна</span>
+                        <span class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                    </div>
+                    <p>«Божественно вкусные вафли! 🧇 Мы брали с бананом и мороженным. Очень вкусный кофе ☕️ и лимонад с киви🥝. Персонал вежливый, приятный. Атмосфера уютная. Хорошее место!»</p>
+                    <span class="review-date">16 июня</span>
+                </div>
+
+                <!-- Отзыв 6: Тимофей Журавель - 5 звезд -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="review-name">Тимофей Журавель</span>
+                        <span class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                    </div>
+                    <p>«Кофе греет - это удивительное место, где можно насладиться вкуснейшим кофе и восхитительными завтраками и обедами. Обстановка там очень приятная, обслуживание дружелюбное, а аромат свежего кофе наполняет всё вокруг. Рекомендую посетить это заведение и насладиться его гостеприимством и кулинарными изысками!»</p>
+                    <span class="review-date">29 июля</span>
+                </div>
+            </div>
+
+            <!-- Яндекс отзывы -->
+            <div class="yandex-review-wrapper">
+                <div class="review-card yandex-review">
+                    <div class="yandex-rating">
+                        <i class="fas fa-star" style="color: #f5b342;"></i>
+                        <i class="fas fa-star" style="color: #f5b342;"></i>
+                        <i class="fas fa-star" style="color: #f5b342;"></i>
+                        <i class="fas fa-star" style="color: #f5b342;"></i>
+                        <i class="fas fa-star" style="color: #f5b342;"></i>
+                        <span class="rating-value">4.8</span>
+                    </div>
+                    <span class="yandex-label">на Яндекс.Картах</span>
+                    <a href="https://yandex.ru/maps/11177/ugorsk/?add-review=true&from=mapframe&ll=63.339383%2C61.314696&mode=poi&poi%5Bpoint%5D=63.339239%2C61.314762&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D2334949052&tab=reviews&z=18" target="_blank" class="yandex-link">
+                        Читать все отзывы на Яндекс <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Форма обратной связи -->
+        <section class="feedback-section form-section">
+            <div class="feedback-header">
+                <h2><i class="fas fa-pen"></i> Оставить свой отзыв</h2>
+                <p>Поделитесь впечатлениями о нашей кофейне</p>
+            </div>
+
+            <div class="feedback-form-wrapper">
+                <form class="feedback-form" id="feedbackFormPage">
+                    <div class="form-row">
+                        <input type="text" id="reviewName" placeholder="Ваше имя" required />
+                        <input type="email" id="reviewEmail" placeholder="Email" required />
+                    </div>
+                    <input type="tel" id="reviewPhone" placeholder="Номер телефона" />
+                    <div class="rating-select">
+                        <span>Ваша оценка:</span>
+                        <div class="stars">
+                            <i class="far fa-star" data-value="1"></i>
+                            <i class="far fa-star" data-value="2"></i>
+                            <i class="far fa-star" data-value="3"></i>
+                            <i class="far fa-star" data-value="4"></i>
+                            <i class="far fa-star" data-value="5"></i>
+                        </div>
+                    </div>
+                    <textarea id="reviewText" rows="5" placeholder="Ваш отзыв или пожелание" required></textarea>
+                    <button type="submit" class="submit-btn">
+                        <i class="fab fa-yandex"></i> Написать отзыв на Яндекс.Картах
+                    </button>
+                </form>
+                <p style="text-align: center; margin-top: 16px; color: #888; font-size: 0.9rem;">
+                    <i class="fas fa-info-circle"></i> Вы будете перенаправлены на Яндекс.Карты для публикации отзыва
+                </p>
+            </div>
+        </section>
+
+        <!-- Кнопка "На главную" -->
+        <div class="back-wrapper">
+            <a href="index.html" class="btn-back">
+                <i class="fas fa-arrow-left"></i> На главную
+            </a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2025 Кофе Греет · Югорск, ул. Механизаторов 5/1 · 08:00–22:00</p>
+    </div>
+</footer>
+
+<script>
+    // Preloader
+    window.addEventListener('load', function() {
+        const preloader = document.getElementById('preloader');
+        setTimeout(function() {
+            preloader.classList.add('hidden');
+        }, 1200);
+    });
+
+    // Бургер-меню
+    const burgerBtn = document.getElementById('burgerBtn');
+    const navWrapper = document.getElementById('navWrapper');
+    const menuOverlay = document.getElementById('menuOverlay');
+
+    function openMenu() {
+        burgerBtn.classList.add('active');
+        navWrapper.classList.add('active');
+        menuOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+        burgerBtn.classList.remove('active');
+        navWrapper.classList.remove('active');
+        menuOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    burgerBtn.addEventListener('click', function() {
+        if (navWrapper.classList.contains('active')) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
+    });
+
+    menuOverlay.addEventListener('click', closeMenu);
+
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+        link.addEventListener('click', closeMenu);
+    });
+
+    // Звездный рейтинг
+    document.querySelectorAll('.stars i').forEach(star => {
+        star.addEventListener('click', function() {
+            const value = parseInt(this.dataset.value);
+            const stars = this.parentElement.querySelectorAll('i');
+            stars.forEach((s, index) => {
+                if (index < value) {
+                    s.className = 'fas fa-star';
+                    s.style.color = '#f5b342';
+                } else {
+                    s.className = 'far fa-star';
+                    s.style.color = '#ddd';
+                }
+            });
+        });
+    });
+
+    // Отправка формы - перенаправление на Яндекс.Карты
+    document.getElementById('feedbackFormPage').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const name = document.getElementById('reviewName').value;
+        const email = document.getElementById('reviewEmail').value;
+        const phone = document.getElementById('reviewPhone').value;
+        const review = document.getElementById('reviewText').value;
+        
+        const reviewData = {
+            name: name,
+            email: email,
+            phone: phone,
+            review: review,
+            date: new Date().toLocaleDateString('ru-RU')
+        };
+        localStorage.setItem('reviewDraft', JSON.stringify(reviewData));
+        
+        alert('Спасибо! Вы будете перенаправлены на Яндекс.Карты для публикации отзыва.\n\nВаши данные сохранены в черновике.');
+        
+        window.open('https://yandex.ru/maps/11177/ugorsk/?add-review=true&from=mapframe&ll=63.339383%2C61.314696&mode=poi&poi%5Bpoint%5D=63.339239%2C61.314762&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D2334949052&tab=reviews&z=18', '_blank');
+        
+        this.reset();
+        document.querySelectorAll('.stars i').forEach(s => {
+            s.className = 'far fa-star';
+            s.style.color = '#ddd';
+        });
+    });
+</script>
+</body>
+</html>
