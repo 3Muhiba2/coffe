@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Отзывы и обратная связь — Кофе Греет</title>
+    <title>Отзывы — Кофе Греет</title>
     <link rel="stylesheet" href="about.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
@@ -78,7 +78,7 @@
             </div>
 
             <div class="reviews-wrapper">
-                <!-- Отзыв 1: molka2557 - 5 звезд -->
+                <!-- Отзыв 1 -->
                 <div class="review-card">
                     <div class="review-header">
                         <span class="review-name">molka2557</span>
@@ -94,7 +94,7 @@
                     <span class="review-date">7 мая</span>
                 </div>
 
-                <!-- Отзыв 2: Ammm - 4 звезды -->
+                <!-- Отзыв 2 -->
                 <div class="review-card">
                     <div class="review-header">
                         <span class="review-name">Ammm</span>
@@ -110,7 +110,7 @@
                     <span class="review-date">9 июля</span>
                 </div>
 
-                <!-- Отзыв 3: Andrey Prusakov - 5 звезд -->
+                <!-- Отзыв 3 -->
                 <div class="review-card">
                     <div class="review-header">
                         <span class="review-name">Andrey Prusakov</span>
@@ -126,7 +126,7 @@
                     <span class="review-date">17 ноября</span>
                 </div>
 
-                <!-- Отзыв 4: Инна - 5 звезд -->
+                <!-- Отзыв 4 -->
                 <div class="review-card">
                     <div class="review-header">
                         <span class="review-name">Инна</span>
@@ -142,7 +142,7 @@
                     <span class="review-date">16 декабря</span>
                 </div>
 
-                <!-- Отзыв 5: Снежана Юрьевна - 5 звезд -->
+                <!-- Отзыв 5 -->
                 <div class="review-card">
                     <div class="review-header">
                         <span class="review-name">Снежана Юрьевна</span>
@@ -158,7 +158,7 @@
                     <span class="review-date">16 июня</span>
                 </div>
 
-                <!-- Отзыв 6: Тимофей Журавель - 5 звезд -->
+                <!-- Отзыв 6 -->
                 <div class="review-card">
                     <div class="review-header">
                         <span class="review-name">Тимофей Журавель</span>
@@ -184,48 +184,13 @@
                         <i class="fas fa-star" style="color: #f5b342;"></i>
                         <i class="fas fa-star" style="color: #f5b342;"></i>
                         <i class="fas fa-star" style="color: #f5b342;"></i>
-                        <span class="rating-value">4.8</span>
+                        <span class="rating-value">4.9</span>
                     </div>
                     <span class="yandex-label">на Яндекс.Картах</span>
                     <a href="https://yandex.ru/maps/11177/ugorsk/?add-review=true&from=mapframe&ll=63.339383%2C61.314696&mode=poi&poi%5Bpoint%5D=63.339239%2C61.314762&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D2334949052&tab=reviews&z=18" target="_blank" class="yandex-link">
                         Читать все отзывы на Яндекс <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
-            </div>
-        </section>
-
-        <!-- Форма обратной связи -->
-        <section class="feedback-section form-section">
-            <div class="feedback-header">
-                <h2><i class="fas fa-pen"></i> Оставить свой отзыв</h2>
-                <p>Поделитесь впечатлениями о нашей кофейне</p>
-            </div>
-
-            <div class="feedback-form-wrapper">
-                <form class="feedback-form" id="feedbackFormPage">
-                    <div class="form-row">
-                        <input type="text" id="reviewName" placeholder="Ваше имя" required />
-                        <input type="email" id="reviewEmail" placeholder="Email" required />
-                    </div>
-                    <input type="tel" id="reviewPhone" placeholder="Номер телефона" />
-                    <div class="rating-select">
-                        <span>Ваша оценка:</span>
-                        <div class="stars">
-                            <i class="far fa-star" data-value="1"></i>
-                            <i class="far fa-star" data-value="2"></i>
-                            <i class="far fa-star" data-value="3"></i>
-                            <i class="far fa-star" data-value="4"></i>
-                            <i class="far fa-star" data-value="5"></i>
-                        </div>
-                    </div>
-                    <textarea id="reviewText" rows="5" placeholder="Ваш отзыв или пожелание" required></textarea>
-                    <button type="submit" class="submit-btn">
-                        <i class="fab fa-yandex"></i> Написать отзыв на Яндекс.Картах
-                    </button>
-                </form>
-                <p style="text-align: center; margin-top: 16px; color: #888; font-size: 0.9rem;">
-                    <i class="fas fa-info-circle"></i> Вы будете перенаправлены на Яндекс.Карты для публикации отзыва
-                </p>
             </div>
         </section>
 
@@ -284,52 +249,6 @@
 
     document.querySelectorAll('.nav-menu a').forEach(link => {
         link.addEventListener('click', closeMenu);
-    });
-
-    // Звездный рейтинг
-    document.querySelectorAll('.stars i').forEach(star => {
-        star.addEventListener('click', function() {
-            const value = parseInt(this.dataset.value);
-            const stars = this.parentElement.querySelectorAll('i');
-            stars.forEach((s, index) => {
-                if (index < value) {
-                    s.className = 'fas fa-star';
-                    s.style.color = '#f5b342';
-                } else {
-                    s.className = 'far fa-star';
-                    s.style.color = '#ddd';
-                }
-            });
-        });
-    });
-
-    // Отправка формы - перенаправление на Яндекс.Карты
-    document.getElementById('feedbackFormPage').addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        const name = document.getElementById('reviewName').value;
-        const email = document.getElementById('reviewEmail').value;
-        const phone = document.getElementById('reviewPhone').value;
-        const review = document.getElementById('reviewText').value;
-        
-        const reviewData = {
-            name: name,
-            email: email,
-            phone: phone,
-            review: review,
-            date: new Date().toLocaleDateString('ru-RU')
-        };
-        localStorage.setItem('reviewDraft', JSON.stringify(reviewData));
-        
-        alert('Спасибо! Вы будете перенаправлены на Яндекс.Карты для публикации отзыва.\n\nВаши данные сохранены в черновике.');
-        
-        window.open('https://yandex.ru/maps/11177/ugorsk/?add-review=true&from=mapframe&ll=63.339383%2C61.314696&mode=poi&poi%5Bpoint%5D=63.339239%2C61.314762&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D2334949052&tab=reviews&z=18', '_blank');
-        
-        this.reset();
-        document.querySelectorAll('.stars i').forEach(s => {
-            s.className = 'far fa-star';
-            s.style.color = '#ddd';
-        });
     });
 </script>
 </body>

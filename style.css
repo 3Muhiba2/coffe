@@ -733,7 +733,6 @@ header {
     color: var(--coffee);
     text-shadow: 0 0 4px rgba(111, 78, 55, 0.3);
 }
-
 /* Форма обратной связи */
 .feedback-form-wrapper {
     max-width: 600px;
